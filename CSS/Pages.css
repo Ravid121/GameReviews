@@ -1,0 +1,49 @@
+﻿body {
+}
+
+.logo {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+}
+    
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #406882;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover:not(.active) {
+            background-color: #1A374D;
+        }
+
+.active {
+    background-color: #6998AB;
+}
+
+img {
+    width: 100%;
+}
+h3 {
+    color: lightblue;
+}
+.right {
+    text-align: right;
+    font-size: 25px;
+}

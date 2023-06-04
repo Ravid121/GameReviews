@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="My_Website.Pages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../CSS/Pages.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" >
+    </asp:ContentPlaceHolder>
+</head>
+<body  style="background-color: #1A374D ">
+        <ul>
+        <li><a href="main%20page.aspx">MainPage</a></li>
+        <li id="Info" runat="server"><a href="information.aspx">Information</a></li>
+        <li id="Rev" runat="server"><a href="Review.aspx">Review</a></li>
+        <li id="About" runat="server"><a href="about.aspx">About</a></li>
+             <li style="float:right"><a href="Login.aspx">Login</a></li>
+        <li id="admin" runat="server"><a href="admin.aspx">Admin</a></li>
+        <li id="admin2" runat="server" ><a href="Admin2.aspx">Admin2</a></li>
+        <li style="float:right" id="logout" runat="server" ><a href="LogOut.aspx">Logout</a></li>
+    </ul>
+     <div class="right" > <%="Hello " + Session["username"]%></div> 
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
